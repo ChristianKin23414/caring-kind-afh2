@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Caring Kind Adult Family Home AFH 2</title>
+  <meta name="description" content="Reach Caring Kind Adult Family Home AFH 2 by phone, email, or contact form. Schedule a visit or ask any question — we'd love to hear from you." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;1,500&display=swap" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav" aria-label="Primary">
+      <a href="index.html" class="nav__brand" aria-label="Caring Kind Adult Family Home, home page">
+        <span class="nav__logo" aria-hidden="true">CK</span>
+        <span class="nav__brand-text">
+          Caring Kind AFH 2
+          <span class="nav__brand-tagline">Adult Family Home</span>
+        </span>
+      </a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <line x1="4" y1="7" x2="20" y2="7"/>
+          <line x1="4" y1="12" x2="20" y2="12"/>
+          <line x1="4" y1="17" x2="20" y2="17"/>
+        </svg>
+      </button>
+      <ul id="primary-nav" class="nav__list">
+        <li><a class="nav__link" href="index.html">Home</a></li>
+        <li><a class="nav__link" href="about.html">About Us</a></li>
+        <li><a class="nav__link" href="services.html">Services</a></li>
+        <li><a class="nav__link" href="amenities.html">Amenities</a></li>
+        <li><a class="nav__link" href="contact.html" aria-current="page">Contact</a></li>
+        <li><a class="btn btn--primary nav__cta" href="#contact-form">Schedule a Visit</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-header__title fade-in">Get in Touch</h1>
+        <p class="page-header__lede fade-in">
+          We'd love to answer your questions, schedule a tour, or just listen.
+          Reach out anytime — we're here for you and your family.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Contact info -->
+          <div class="contact-info fade-in">
+            <h3>Visit, Call, or Write</h3>
+            <ul class="contact-info__list" aria-label="Contact details">
+              <li>
+                <span class="contact-info__label">Address</span>
+                <span class="contact-info__value">123 Maple Lane<br/>Your City, ST 00000</span>
+              </li>
+              <li>
+                <span class="contact-info__label">Phone</span>
+                <span class="contact-info__value"><a href="tel:+15551234567">(555) 123-4567</a></span>
+              </li>
+              <li>
+                <span class="contact-info__label">Email</span>
+                <span class="contact-info__value"><a href="mailto:hello@caringkindafh2.com">hello@caringkindafh2.com</a></span>
+              </li>
+              <li>
+                <span class="contact-info__label">Hours</span>
+                <span class="contact-info__value">Tours by appointment, 7 days a week</span>
+              </li>
+            </ul>
+
+            <div class="map-placeholder" role="img" aria-label="Map placeholder showing the home's location">
+              <span>Map embed goes here<br/><small>(Google Maps / Apple Maps iframe)</small></span>
+            </div>
+          </div>
+
+          <!-- Contact form -->
+          <form id="contact-form" class="form fade-in" novalidate>
+            <h3 style="margin-bottom: var(--space-5);">Send Us a Message</h3>
+
+            <div class="form__row">
+              <label class="form__label" for="name">Your Name <span aria-hidden="true">*</span></label>
+              <input class="form__input" type="text" id="name" name="name" required aria-required="true" autocomplete="name" />
+              <span class="form__error" data-error-for="name" role="alert" aria-live="polite"></span>
+            </div>
+
+            <div class="form__row form__row--split">
+              <div>
+                <label class="form__label" for="email">Email <span aria-hidden="true">*</span></label>
+                <input class="form__input" type="email" id="email" name="email" required aria-required="true" autocomplete="email" />
+                <span class="form__error" data-error-for="email" role="alert" aria-live="polite"></span>
+              </div>
+              <div>
+                <label class="form__label" for="phone">Phone <span style="color: var(--color-text-muted); font-weight: 400; font-size: 0.85rem;">(optional)</span></label>
+                <input class="form__input" type="tel" id="phone" name="phone" autocomplete="tel" />
+                <span class="form__error" data-error-for="phone" role="alert" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <div class="form__row">
+              <label class="form__label" for="topic">How can we help?</label>
+              <select class="form__select" id="topic" name="topic">
+                <option value="tour">Schedule a tour</option>
+                <option value="care">Ask about care needs</option>
+                <option value="availability">Check room availability</option>
+                <option value="general">General question</option>
+              </select>
+            </div>
+
+            <div class="form__row">
+              <label class="form__label" for="message">Message <span aria-hidden="true">*</span></label>
+              <textarea class="form__textarea" id="message" name="message" required aria-required="true" placeholder="Tell us a little about your loved one or what you'd like to know..."></textarea>
+              <span class="form__error" data-error-for="message" role="alert" aria-live="polite"></span>
+            </div>
+
+            <button class="btn btn--primary" type="submit" style="width: 100%;">Send Message</button>
+
+            <div class="form__success" role="status" tabindex="-1">
+              <strong>Thank you!</strong> Your message has been received. We'll be in touch shortly.
+            </div>
+
+            <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: var(--space-4); margin-bottom: 0;">
+              We respect your privacy. Your information will only be used to respond to your inquiry.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer__brand">Caring Kind AFH 2</div>
+          <p class="footer__text">
+            A warm, family-style adult family home dedicated to dignity,
+            comfort, and compassionate 24/7 care.
+          </p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="amenities.html">Amenities</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>123 Maple Lane, Your City, ST 00000</li>
+            <li><a href="tel:+15551234567">(555) 123-4567</a></li>
+            <li><a href="mailto:hello@caringkindafh2.com">hello@caringkindafh2.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        &copy; <span data-year>2026</span> Caring Kind Adult Family Home AFH 2. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <a class="call-fab" href="tel:+15551234567" aria-label="Call Caring Kind AFH 2">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/>
+    </svg>
+    Call Us
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
